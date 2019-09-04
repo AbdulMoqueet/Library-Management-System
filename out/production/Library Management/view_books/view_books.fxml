@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="view_pane" prefHeight="550.0" prefWidth="1100.0" stylesheets="@view_bo0k.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_books.ViewBooks">
+   <children>
+      <TableView fx:id="table_view" layoutX="18.0" layoutY="93.0" prefHeight="438.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="book_id" prefWidth="54.0" text="Book Id" />
+          <TableColumn fx:id="book_name" prefWidth="146.0" text="Book Name" />
+            <TableColumn fx:id="author_name" prefWidth="163.0" text="Author Name" />
+            <TableColumn fx:id="category" prefWidth="121.0" text="Category" />
+            <TableColumn fx:id="quantity" prefWidth="60.0" text="Quantity" />
+            <TableColumn fx:id="date_of_adding" prefWidth="107.0" text="Date of Adding" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Pane fx:id="second_pane" layoutX="737.0" layoutY="93.0" prefHeight="438.0" prefWidth="349.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000086" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="tf_book_name" labelFloat="true" layoutX="184.0" layoutY="100.0" promptText="Book Name" />
+            <JFXTextField fx:id="tf_author_name" labelFloat="true" layoutX="28.0" layoutY="181.0" promptText="Author Name" />
+            <JFXTextField fx:id="tf_category" labelFloat="true" layoutX="191.0" layoutY="181.0" promptText="Category" />
+            <JFXTextField fx:id="tf_quantity" labelFloat="true" layoutX="28.0" layoutY="258.0" promptText="Quantity" />
+            <JFXButton fx:id="btn_save_changes" buttonType="RAISED" layoutX="28.0" layoutY="334.0" prefHeight="40.0" prefWidth="135.0" text="Save Changes" />
+            <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="191.0" layoutY="334.0" prefHeight="40.0" prefWidth="135.0" text="Delete" />
+            <JFXTextField fx:id="tf_book_id" editable="false" focusTraversable="false" labelFloat="true" layoutX="28.0" layoutY="100.0" promptText="Book Id" />
+            <JFXDatePicker fx:id="dp_date_of_adding" defaultColor="#4059a9" editable="false" layoutX="202.0" layoutY="258.0" prefHeight="25.0" prefWidth="135.0" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="tf_search" labelFloat="true" layoutX="419.0" layoutY="60.0" promptText="Search..." />
+      <JFXComboBox fx:id="cb_by" labelFloat="true" layoutX="583.0" layoutY="60.0" prefHeight="25.0" prefWidth="135.0" promptText="Search By" />
+      <Label layoutX="436.0" layoutY="22.0" text="View Book" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+#splash_Screen_Pane{
+   -fx-background-image:url("splash.jpg");
+}
+
+.label{
+    -fx-text-fill: orange;
+}

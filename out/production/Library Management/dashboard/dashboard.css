@@ -1,0 +1,16 @@
+
+#dashboard_pane{
+-fx-background-image: url("dashboard.jpg");
+    -fx-background-size: cover;
+}
+
+.jfx-button {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-text-fill: orange;
+    -fx-border-color: orange;
+    -fx-border-width: 1px;
+}
+
+.label{
+    -fx-text-fill: WHITE;
+}

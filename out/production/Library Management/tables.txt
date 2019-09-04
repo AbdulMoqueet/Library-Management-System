@@ -1,0 +1,9 @@
+create table login (username varchar2(30), password varchar2(30))
+
+
+
+create table book (book_id varchar2(30), book_name varchar2(30), author_name varchar2(30), category varchar2(30), quantity varchar2(30), date_of_adding varchar2(12))
+
+
+
+create table issue (book_id varchar2(30), book_name varchar2(30), author_name varchar2(30), category varchar2(30), quantity varchar2(30), date_of_adding varchar2(12), issue_id varchar2(30), student_name varchar2(30), student_class varchar2(30), student_roll varchar2(30), date_of_issue varchar2(12))

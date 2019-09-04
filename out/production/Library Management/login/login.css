@@ -1,0 +1,25 @@
+#login_pane{
+    -fx-background-image: url("login.jpg");
+}
+
+.label{
+    -fx-text-fill: orange;
+}
+
+.jfx-text-field,.jfx-password-field{
+    -jfx-unfocus-color:orange;
+    -jfx-focus-color:orange;
+    -fx-prompt-text-fill: orange;
+    -fx-text-fill: orange;
+}
+
+#login_second_pane{
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.jfx-button{
+    -fx-background-color: orange;
+    -fx-text-fill: #fff;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="dashboard_pane" prefHeight="700.0" prefWidth="1366.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Dashboard">
+   <children>
+      <GridPane fx:id="dashboard_grid_pane" alignment="CENTER" hgap="10.0" layoutX="142.0" layoutY="145.0" prefHeight="446.0" prefWidth="775.0" vgap="10.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btn_add_book" prefHeight="237.0" prefWidth="573.0" text="Add Book">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btn_view_book" prefHeight="247.0" prefWidth="538.0" stylesheets="@dashboard.css" text="View Books" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btn_issue_book" prefHeight="264.0" prefWidth="616.0" text="Issue Book" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btn_view_issued_list" prefHeight="315.0" prefWidth="622.0" text="View Issued List" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></JFXButton>
+         </children>
+      </GridPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="477.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASHBOARD" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0">
+         <font>
+            <Font name="Arial Black" size="50.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ffd200" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="WHITE" layoutX="200.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By : Md Danish">
+         <font>
+            <Font name="Lucida Sans Unicode" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

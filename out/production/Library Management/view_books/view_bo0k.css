@@ -1,0 +1,54 @@
+
+#view_pane{
+    -fx-background-image: url("view_book.jpg");
+    -fx-background-size: cover;
+}
+
+.jfx-button{
+    -fx-background-color: orange;
+    -fx-text-fill: #fff;
+}
+
+
+
+.jfx-text-field,.jfx-combo-box{
+    -jfx-unfocus-color:orange;
+    -jfx-focus-color:orange;
+    -fx-prompt-text-fill: orange;
+    -fx-text-fill: orange;
+
+}
+.list-view,.list-cell{
+    -fx-text-fill: orange;
+    -fx-background-color:transparent;
+}
+.jfx-button{
+    -fx-background-color: orange;
+    -fx-text-fill: #fff;
+}
+
+#second_pane{
+    -fx-background-color: rgba(0, 0, 0, 0.55);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.table-view{
+    -fx-background-color: rgba(0, 0, 0, 0.55);
+}
+
+.table-view .table-cell{
+    -fx-background-color: rgba(0, 0, 0, 0.55);
+    -fx-text-fill: orange;
+    -fx-border-width: .6px;
+}
+
+.table-row-cell{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:selected{
+    -fx-background-color: #fff;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
