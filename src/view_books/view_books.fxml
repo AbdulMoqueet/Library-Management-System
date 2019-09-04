@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="550.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_books.ViewBooks">
+<AnchorPane fx:id="view_pane" prefHeight="550.0" prefWidth="1100.0" stylesheets="@view_bo0k.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view_books.ViewBooks">
    <children>
       <TableView fx:id="table_view" layoutX="18.0" layoutY="93.0" prefHeight="438.0" prefWidth="700.0">
         <columns>
@@ -22,8 +22,11 @@
             <TableColumn fx:id="quantity" prefWidth="60.0" text="Quantity" />
             <TableColumn fx:id="date_of_adding" prefWidth="107.0" text="Date of Adding" />
         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
       </TableView>
-      <Pane layoutX="737.0" layoutY="93.0" prefHeight="438.0" prefWidth="349.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+      <Pane fx:id="second_pane" layoutX="737.0" layoutY="93.0" prefHeight="438.0" prefWidth="349.0">
          <effect>
             <DropShadow blurType="GAUSSIAN" color="#00000086" />
          </effect>
@@ -32,8 +35,8 @@
             <JFXTextField fx:id="tf_author_name" labelFloat="true" layoutX="28.0" layoutY="181.0" promptText="Author Name" />
             <JFXTextField fx:id="tf_category" labelFloat="true" layoutX="191.0" layoutY="181.0" promptText="Category" />
             <JFXTextField fx:id="tf_quantity" labelFloat="true" layoutX="28.0" layoutY="258.0" promptText="Quantity" />
-            <JFXButton fx:id="btn_save_changes" buttonType="RAISED" layoutX="76.0" layoutY="381.0" style="-fx-background-color: pink;" text="Save Changes" />
-            <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="215.0" layoutY="381.0" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: pink;" text="Delete" />
+            <JFXButton fx:id="btn_save_changes" buttonType="RAISED" layoutX="28.0" layoutY="334.0" prefHeight="40.0" prefWidth="135.0" text="Save Changes" />
+            <JFXButton fx:id="btn_delete" buttonType="RAISED" layoutX="191.0" layoutY="334.0" prefHeight="40.0" prefWidth="135.0" text="Delete" />
             <JFXTextField fx:id="tf_book_id" editable="false" focusTraversable="false" labelFloat="true" layoutX="28.0" layoutY="100.0" promptText="Book Id" />
             <JFXDatePicker fx:id="dp_date_of_adding" defaultColor="#4059a9" editable="false" layoutX="202.0" layoutY="258.0" prefHeight="25.0" prefWidth="135.0" />
          </children>

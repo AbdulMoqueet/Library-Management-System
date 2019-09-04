@@ -1,10 +1,12 @@
 package splash;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import my_database.MyDatabase;
 import my_utils.MyAlert;
@@ -17,8 +19,13 @@ public class Splash implements Initializable {
 
     public static Stage stage;
 
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+
 
         MyDatabase.connectToOracle();
 
