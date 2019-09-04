@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="add_pane" prefHeight="411.0" prefWidth="755.0" stylesheets="@add_book.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="add_book.AddBook">
+   <children>
+      <JFXTextField fx:id="tf_book_id" labelFloat="true" layoutX="131.0" layoutY="156.0" promptText="Book Id" />
+      <JFXTextField fx:id="tf_author_name" labelFloat="true" layoutX="489.0" layoutY="156.0" promptText="Author Name" />
+      <JFXTextField fx:id="tf_quantity" labelFloat="true" layoutX="304.0" layoutY="228.0" promptText="Quantity" />
+      <JFXTextField fx:id="tf_book_name" labelFloat="true" layoutX="304.0" layoutY="156.0" promptText="Book Name" />
+      <JFXTextField fx:id="tf_category" labelFloat="true" layoutX="131.0" layoutY="230.0" promptText="Category" />
+      <JFXButton fx:id="btn_add_book" buttonType="RAISED" layoutX="519.0" layoutY="304.0" prefHeight="31.0" prefWidth="102.0" text="Add Book" />
+      <JFXTextField fx:id="tf_date_of_addition" editable="false" focusTraversable="false" labelFloat="true" layoutX="489.0" layoutY="230.0" promptText="Date of Addition" />
+      <Text fill="#ff9000" layoutX="290.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD BOOK" underline="true">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

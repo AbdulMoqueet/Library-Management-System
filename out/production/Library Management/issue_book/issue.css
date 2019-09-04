@@ -1,0 +1,33 @@
+
+#issue_pane{
+    -fx-background-image: url("issue.jpg");
+    -fx-background-size: cover;
+}
+
+.jfx-button{
+    -fx-background-color: orange;
+    -fx-text-fill: #fff;
+}
+
+.label{
+    -fx-text-fill: #eee;
+}
+
+
+.jfx-text-field,.jfx-combo-box{
+    -jfx-unfocus-color:orange;
+    -jfx-focus-color:orange;
+    -fx-prompt-text-fill: orange;
+    -fx-text-fill: orange;
+}
+
+#second_pane{
+    -fx-background-color: rgba(0, 0, 0, 0.69);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.jfx-button{
+    -fx-background-color: orange;
+    -fx-text-fill: #fff;
+}
