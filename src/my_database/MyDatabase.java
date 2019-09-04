@@ -309,7 +309,6 @@ public class MyDatabase {
             pr.setInt(1, quantity);
             pr.setString(2, bookId);
             pr.executeUpdate();
-
         } catch (Exception e) {
             MyAlert.errorAlert(e);
         }
