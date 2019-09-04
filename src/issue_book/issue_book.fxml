@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="issue_book.IssueBook">
+   <children>
+      <JFXComboBox fx:id="cb_book_name" labelFloat="true" layoutX="148.0" layoutY="106.0" prefHeight="25.0" prefWidth="135.0" promptText="Book Name" />
+      <JFXTextField fx:id="tf_issue_id" labelFloat="true" layoutX="148.0" layoutY="230.0" promptText="Issue Id" />
+      <JFXTextField fx:id="tf_student_name" labelFloat="true" layoutX="378.0" layoutY="230.0" promptText="Student Name" />
+      <JFXTextField fx:id="tf_student_class" labelFloat="true" layoutX="148.0" layoutY="283.0" promptText="Student Class" />
+      <JFXTextField fx:id="tf_student_roll" labelFloat="true" layoutX="378.0" layoutY="283.0" promptText="Student Roll" />
+      <JFXTextField fx:id="tf_date_of_issue" editable="false" focusTraversable="false" labelFloat="true" layoutX="148.0" layoutY="331.0" promptText="Data of Issue" />
+      <JFXButton fx:id="btn_issue_book" buttonType="RAISED" layoutX="395.0" layoutY="380.0" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: pink;" text="Issue Now" />
+      <JFXTextField fx:id="tf_book_id" editable="false" focusTraversable="false" labelFloat="true" layoutX="378.0" layoutY="111.0" promptText="Book Id" />
+      <JFXTextField fx:id="tf_author_name" focusTraversable="false" labelFloat="true" layoutX="378.0" layoutY="167.0" promptText="Author Name" />
+      <JFXTextField fx:id="tf_category" editable="false" focusTraversable="false" labelFloat="true" layoutX="148.0" layoutY="167.0" promptText="Category" />
+      <Label layoutX="364.0" layoutY="23.0" text="Issue Book" />
+   </children>
+</AnchorPane>

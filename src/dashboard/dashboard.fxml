@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Dashboard">
+   <children>
+      <JFXButton fx:id="btn_add_book" buttonType="RAISED" layoutX="115.0" layoutY="238.0" prefHeight="204.0" prefWidth="213.0" style="-fx-background-color: pink;" text="Add Book" />
+      <JFXButton fx:id="btn_view_book" buttonType="RAISED" layoutX="355.0" layoutY="238.0" prefHeight="204.0" prefWidth="213.0" style="-fx-background-color: pink;" text="View Books" />
+      <JFXButton fx:id="btn_issue_book" buttonType="RAISED" layoutX="595.0" layoutY="238.0" prefHeight="204.0" prefWidth="213.0" style="-fx-background-color: pink;" text="Issue Book" />
+      <JFXButton fx:id="btn_view_issued_list" buttonType="RAISED" layoutX="839.0" layoutY="238.0" prefHeight="204.0" prefWidth="213.0" style="-fx-background-color: pink;" text="View Issued List" />
+      <Label layoutX="628.0" layoutY="14.0" text="Dash Borad" />
+   </children>
+</AnchorPane>
